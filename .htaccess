@@ -1,0 +1,9 @@
+Options +FollowSymlinks 
+RewriteEngine On 
+RewriteBase /mvc_utec/ 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteRule ^(.*)$ index.php/$1 [L]
+<ifModule mod_headers.c>     
+	Header set Connection keep-alive 
+</ifModule> 
