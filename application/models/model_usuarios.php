@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); 
-class model_usuarios extends CI_Model 
+class Model_usuarios extends CI_Model 
 { 
   function traer_usuarios( $idusuarios=0 )
   { 

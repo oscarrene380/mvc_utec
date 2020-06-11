@@ -1,11 +1,11 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); 
-class usuarios extends CI_Controller 
+class Usuarios extends CI_Controller 
 { 
   public function __construct()
   { 
     parent::__construct(); 
     // session_start(); 
-    $this->load->model('model_usuarios'); 
+    $this->load->model('Model_usuarios'); 
   } 
 
   public function index()

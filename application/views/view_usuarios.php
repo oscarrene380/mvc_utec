@@ -289,7 +289,7 @@
  function verreporte()
  {   
  	var option = $("#select-reportes option:selected").val(); 
- 	window.open("http://localhost:8080/appDiplomadoUtec"+"/informe.jsp?nombre=report"+option,"_blank") ;  
+ 	window.open("https://appdiplomadoutec.azurewebsites.net/informe.jsp?nombre=report"+option,"_blank") ;  
  } 
 </script> 
 <style> 

@@ -7,8 +7,8 @@
   <title>MVC | UTEC</title>
   <!-- Icono -->
   <link rel="shortcut icon" type="image/x-icon" href="img/icon.svg" />
-  <!-- JQuery -->  
-  <script src="js/jquery-1.11.0.min.js"></script>
+  <!-- JQuery -->
+  <script src="js/jquery-1.11.0.min.js"></script> 
   <!-- Bootstrap --> 
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <script src="js/bootstrap.min.js"></script>
@@ -20,6 +20,7 @@
 <body style="background: #5d0a28; color: #ffff;">      
   <div class="page-header">       
     <center><h1>Diplomado Reporte <small>Universidad Tecnológica de El Salvador</small></h1></center>
+    <center><h2>Técnicas de Producción Industrial de Software II</h2></center>
   </div>      
   <p class="navbar-text navbar-right">
     <?php // echo(isset($usuario)&&$usuario!=false)?'Bienvenido:'.$usuario['nombre']:' ' ?> 

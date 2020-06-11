@@ -10,7 +10,7 @@
       <div class="form-group"> 
         <input type="password" class="form-control" name="clave" placeholder="clave"> 
       </div> 
-      <button type="button" onclick="loguear()" class="btn btn-info btn-block"><i class="glyphicon glyphicon-ok-sign"></i>&nbsp;Acceder</button> 
+      <button type="button" id="log" onclick="loguear()" class="btn btn-info btn-block"><i class="glyphicon glyphicon-ok-sign"></i>&nbsp;Acceder</button> 
       <?php form_close(); ?> 
     </div>
   </div> 
@@ -21,7 +21,7 @@
  function loguear()
  { 
   $.ajax({ 
-   url      : 'acceso/loguear', 
+   url      : 'Acceso/loguear', 
    type     : 'post', 
    dataType : 'json',  
    data     : $('#my_form').serialize(),  
@@ -40,9 +40,19 @@
      setTimeout( function(){ window.location.replace( 'usuarios' ); }, 2000 );    
     }    
    }, 
-   error : function(){ 
-    alerta(); dialogo( 'Error', 'Error en la función acceso/loguear.' );    } 
+   error : function(xhr, status){ 
+    alerta(); dialogo( 'Error', 'Error en la función acceso/loguear.' );    
+    console.log(xhr); console.log(status);
+   } 
   }); 
  };
- alert("Recuerda que las credenciales son:\nusuario: admin\nclave: 123");
+ alert("Recuerda que las credenciales son:\nusuario: admin\nclave: 123\nIntregrantes:\nDurán Miranda, Oscar René 25-0048-2016\nSotelo de la O, Diego Alejandro 25-0763-2016");
+ 
+$(document).keypress(function(e){
+    var code = (e.keyCode ? e.keyCode : e.which);
+    if(code==13)
+    {
+        $("#log").click();
+    }
+});
 </script> 

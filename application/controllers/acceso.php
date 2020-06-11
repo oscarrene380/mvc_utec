@@ -1,12 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); 
-class acceso extends CI_Controller 
+class Acceso extends CI_Controller 
 { 
 
   public function __construct() 
   {   
     parent::__construct(); 
     // session_start(); 
-    $this->load->model('model_acceso');  
+    $this->load->model('Model_acceso');  
   } 
 
   public function index()
@@ -29,7 +29,7 @@ class acceso extends CI_Controller
     }
     else
     {    
-      $usuario=$this->model_acceso->comprobar( $_POST ); 
+      $usuario=$this->Model_acceso->comprobar( $_POST ); 
       if( $usuario==false )
       { 
         $data['type']   =false; 

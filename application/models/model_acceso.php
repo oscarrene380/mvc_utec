@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); 
-class model_acceso extends CI_Model 
+class Model_acceso extends CI_Model 
 { 
 	function comprobar( $post )
 	{ 

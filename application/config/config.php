@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 // $config['base_url'] = 'http://localhost/mvc_utec';
-$config['base_url'] = 'https://reportesets2.azurewebsites.net';
+$config['base_url'] = 'https://mvc-utec.000webhostapp.com/';
 
 /*
 |--------------------------------------------------------------------------
